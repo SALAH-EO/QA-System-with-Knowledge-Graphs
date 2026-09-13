@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: url('test.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Larger font size */
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the input form */
+}
+
+.input-form label {
+    font-size: 1.5rem; /* Larger label font */
+}
+
+.input-form input[type="text"] {
+    padding: 10px;
+    width: 500px;
+    font-size: 1.2rem; /* Larger input font */
+}
+
+.button-container {
+    margin-top: 15px; /* Space between input and button */
+}
+
+.input-form button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1.2rem; /* Larger button font */
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust width for better spacing */
+}
+
+.box {
+    margin-top: 20px;
+    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(50, 50, 50, 0.8); /* Darker semi-transparent background for contrast */
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGQA</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Votre Guide aux régulations des marchés publics</h1>
+        
+        <form method="POST" class="input-form">
+            <label for="question">Posez votre question :</label><br>
+            <input type="text" id="question" name="question" required>
+            <button type="submit">Soumettre</button>
+        </form>
+
+        <div class="results">
+            <div class="box graph-data">
+                <h2>Réponse</h2>
+                {% if answer %}
+                    <p>{{ answer }}</p>
+                {% else %}
+                    <p>Aucune réponse disponible.</p>
+                {% endif %}
+            </div>
+
+            <div class="box ollama-answer">
+                <h2>Données</h2>
+                {% if formatted_answer %}
+                    <p>{{ formatted_answer|safe }}</p>
+                {% else %}
+                    <p>Aucune Donnée disponible.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
